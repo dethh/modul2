@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?javafx version="11.0.0"?>
+
+<fx:root type="javafx.scene.layout.BorderPane" fx:controller="com.example.calorie_calculator.CalorieCalculatorController">
+    <center>
+        <fx:table fx:id="calculationTable">
+            <columns>
+                <fx:TableColumn fx:id="parameterColumn" text="Parameter" />
+                <fx:TableColumn fx:id="valueColumn" text="Value" />
+                <fx:TableColumn fx:id="resultColumn" text="Result" />
+            </columns>
+        </fx:table>
+    </center>
+
+    <bottom>
+        <fx:hbox>
+            <fx:button text="Calculate" fx:onAction="calculateButtonClick" />
+            <fx:button text="Save to File" fx:onAction="saveToFileButtonClick" />
+        </fx:hbox>
+    </bottom>
+</fx:root>
